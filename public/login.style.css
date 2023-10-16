@@ -1,3 +1,13 @@
+.sect {
+    height: 100vh;
+}
+
+@media (max-width: 992px) {
+    .sect {
+        height: auto; /* Let the content dictate the height */
+    }
+}
+
 .background-radial-gradient {
     background-color: hsl(218, 41%, 15%);
     background-image: radial-gradient(650px circle at 0% 0%,

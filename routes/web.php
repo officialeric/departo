@@ -20,4 +20,5 @@ Route::view('/track', 'student.complaint');
 Route::view('/about', 'index');
 
 // staff routes
-Route::view('/admin', 'staff.login');
+Route::view('/admin', 'staff.admin');
+Route::post('/admin/login', [UsersController::class, 'adminLogin']);
