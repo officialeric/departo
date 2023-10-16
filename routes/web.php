@@ -13,15 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('student.home');
-});
-Route::get('/compose', function () {
-    return view('student.compose');
-});
-Route::get('/track', function () {
-    return view('student.complaint');
-});
-Route::get('/about', function () {
-    return view('index');
-});
+// student routes
+Route::view('/', 'student.home');
+Route::view('/compose', 'student.compose');
+Route::view('/track', 'student.complaint');
+Route::view('/about', 'index');
+
+// staff routes
+Route::view('/admin', 'staff.login');
