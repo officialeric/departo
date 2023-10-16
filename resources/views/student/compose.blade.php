@@ -9,11 +9,11 @@
 <body>
    
     <header>
-        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 ">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                 <a href="{{ url('/') }}" class="flex items-center">
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.cntQ2ZcMSiQ8DR01bIfDjgHaHa%26pid%3DApi&f=1&ipt=766acddc51cd4580b6f7fe966d7af935963d8c3f529b624c14b701266380bbe5&ipo=images" class="mr-3 h-12 sm:h-9" alt="Departo Logo" />
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Departo</span>
+                    <span class="self-center text-xl font-semibold whitespace-nowrap ">Departo</span>
                 </a>
                 <div class="flex items-center lg:order-2">
                     <a href="{{ url('track') }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Track Your Complaint</a>
@@ -24,10 +24,11 @@
         </nav>
     </header>
 
-    <section class="flex justify-center bg-white dark:bg-gray-900 mt-12">
+    <section class="flex justify-center bg-white mt-12">
         
 
-<form>
+<form action="{{ url('submit-complaint') }}" method="POST">
+  @csrf
     <div class="space-y-12">
       <div class="border-b border-gray-900/10 pb-12">
         <h2 class="text-base font-semibold leading-7 text-gray-900">Compose Complaint</h2>
@@ -67,9 +68,9 @@
           </div>
 
           <div class="col-span-full">
-            <label for="about" class="block text-sm font-medium leading-6 text-gray-900">About</label>
+            <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Description</label>
             <div class="mt-2">
-              <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+              <textarea id="about" name="about" rows="3" class="pl-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
             </div>
             <p class="mt-3 text-sm leading-6 text-gray-600">Write a few sentences to describe your complaint.</p>
           </div>
@@ -85,7 +86,7 @@
     </div>
   
     <div class="mt-2 flex items-center justify-end gap-x-6">
-      <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
+      <button type="reset" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
       <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
     </div>
   </form>
