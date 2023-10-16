@@ -1491,7 +1491,7 @@
             
                         <div class="card bg-glass">
                             <div class="card-body px-4 py-5 px-md-5">
-                                <form action="/admin/login" method="post">
+                                <form action="/admin" method="post">
                                     @csrf
                                     <!-- Email input -->
                                     <div class="form-outline mb-4">

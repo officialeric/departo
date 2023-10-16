@@ -13,7 +13,13 @@ return new class extends Migration
     {
         Schema::create('complaints', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('description');
+            $table->foreignId('student_id')->constrained();
+            $table->foreignId('section_id')->constrained();
+            $table->foreignId('user_id')->constrained();
+            $table->string('status');
+            $table->string('comment');
+            $table->timestamps('time_created');
         });
     }
 

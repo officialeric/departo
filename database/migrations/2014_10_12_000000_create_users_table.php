@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('fullname');
             $table->string('email')->unique();
-            $table->text('phone_number');
+            $table->text('phone_no');
             $table->string('password');
             $table->string('location');
             $table->foreignId('section_id')->constrained();

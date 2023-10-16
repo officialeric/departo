@@ -21,4 +21,3 @@ Route::view('/about', 'index');
 
 // staff routes
 Route::view('/admin', 'staff.admin');
-Route::post('/admin/login', [UsersController::class, 'adminLogin']);
