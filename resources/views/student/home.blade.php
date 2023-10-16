@@ -9,11 +9,11 @@
 <body>
    
     <header>
-        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 ">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                 <a href="{{ url('/') }}" class="flex items-center">
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.cntQ2ZcMSiQ8DR01bIfDjgHaHa%26pid%3DApi&f=1&ipt=766acddc51cd4580b6f7fe966d7af935963d8c3f529b624c14b701266380bbe5&ipo=images" class="mr-3 h-12 sm:h-9" alt="Departo Logo" />
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Departo</span>
+                    <span class="self-center text-xl font-semibold whitespace-nowrap">Departo</span>
                 </a>
                 <div class="flex items-center lg:order-2">
                     <a href="{{ url('track') }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Track Your Complaint</a>
@@ -24,11 +24,11 @@
         </nav>
     </header>
 
-    <section class="flex justify-center text-center bg-white dark:bg-gray-900">
+    <section class="flex justify-center text-center bg-white ">
         <div class=" max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 ">
             <div class="mr-auto place-self-center lg:col-span-7">
-                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">Student Helpdesk and Support Request System</h1>
-                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl ">Student Helpdesk and Support Request System</h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">
                     This is a user-friendly online platform designed to streamline the process of submitting and managing 
                     computer-department-related complaints and support requests from students.
                 </p>
@@ -46,18 +46,18 @@
         </div>
     </section>
 
-    <footer class="p-4 bg-gray-50 sm:p-6 dark:bg-gray-800">
+    <footer class="p-4 bg-gray-50 sm:p-6 ">
         <div class="mx-auto max-w-screen-xl">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a href="{{ url('/') }}" class="flex items-center">
                         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.cntQ2ZcMSiQ8DR01bIfDjgHaHa%26pid%3DApi&f=1&ipt=766acddc51cd4580b6f7fe966d7af935963d8c3f529b624c14b701266380bbe5&ipo=images" class="mr-3 h-12" alt="Departo Logo" />
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Departo</span>
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap e">Departo</span>
                     </a>
                 </div>
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Resources</h2>
                         <ul class="text-gray-600 dark:text-gray-400">
                             <li class="mb-4">
                                 <a href="{{ url('about') }}" class="hover:underline">About Departo</a>
@@ -68,7 +68,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Follow us</h2>
                         <ul class="text-gray-600 dark:text-gray-400">
                             <li class="mb-4">
                                 <a href="#" class="hover:underline ">Allus</a>
@@ -79,7 +79,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Legal</h2>
                         <ul class="text-gray-600 dark:text-gray-400">
                             <li class="mb-4">
                                 <a href="#" class="hover:underline">Privacy Policy</a>
