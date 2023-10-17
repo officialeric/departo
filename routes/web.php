@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,5 @@ Route::view('/track', 'student.complaint');
 Route::view('/about', 'index');
 
 // staff routes
-Route::view('/admin', 'staff.admin');
+Route::view('/admin', 'staff\admin');
+Route::post('/admin', [UserController::class, 'adminLogin']);
