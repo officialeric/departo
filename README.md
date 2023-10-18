@@ -1,6 +1,6 @@
 <p align="center"><a href="#" target="">
-<img src="dist/img/departo.png" width="400" alt="departo Logo">
-<h3 style='color:blue;'>Departo</h3>
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.cntQ2ZcMSiQ8DR01bIfDjgHaHa%26pid%3DApi&f=1&ipt=766acddc51cd4580b6f7fe966d7af935963d8c3f529b624c14b701266380bbe5&ipo=images" width="400" alt="departo Logo">
+Departo
 </a></p>
 
 <p align="center">
