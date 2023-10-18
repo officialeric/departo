@@ -1,11 +1,7 @@
 <p align="center"><a href="#" target="">
-<img src="dist/img/departo.png" width="400" alt="departo Logo">
-<h3 style='color:blue;'>Departo</h3>
+<img src="https://o.remove.bg/downloads/eb647983-7ad8-4f67-ab99-b7e353601788/th-3103370796-removebg-preview.png" width="300" alt="departo Logo">
 </a></p>
 
-<p align="center">
-<a href='https://github.com/officialeric'>officialeric</a> & <a href='https://github.com/Kadilana'>kadilana</a>
-</p>
 
 ## About Departo
 
@@ -20,7 +16,11 @@ Departo This is a user-friendly online platform designed to streamline the proce
 
 
 Departo is accessible, powerful, and provides tools required for large, robust departments.
+## About Programmers
+
+-[Erick Ernest](https://github.com/officialeric)
+& [Kadilana Charles](https://github.com/Kadilana)
 
 ## License
 
-The Departo is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Departo is open-sourced software licensed under the Allus Licence.
