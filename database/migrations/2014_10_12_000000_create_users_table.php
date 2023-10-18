@@ -18,9 +18,9 @@ return new class extends Migration
             $table->text('phone_no')->nullable();
             $table->string('password');
             $table->string('location')->default('Not set');
-            $table->foreignId('module_id')->constrained();
-            $table->foreignId('role_id')->constrained();
-            $table->foreignId('section_id')->constrained();
+            // $table->foreignId('module_id')->constrained();
+            // $table->foreignId('role_id')->constrained();
+            // $table->foreignId('section_id')->constrained();
             $table->timestamp('email_verified_at');
             $table->rememberToken();
             $table->timestamps();

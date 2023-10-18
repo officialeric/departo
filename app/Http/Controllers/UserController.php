@@ -6,6 +6,18 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    public function __construct(){
+
+    $this->middleware('guest')->except('logout');
+    
+    }
+
+    public function logout(){
+        auth()->logout();
+
+        return redirect('/admin');
+    }
+
     public function adminLogin(Request $request)
     {
         $inputs = $request->validate([
