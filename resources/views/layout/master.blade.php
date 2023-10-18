@@ -124,9 +124,9 @@
             <!-- Main Sidebar Container -->
             <aside class="main-sidebar sidebar-dark-primary elevation-4">
                 <!-- Brand Logo -->
-                <a href="#" class="brand-link text-center text-decoration-none">
-                {{-- <img src="dist/img/departo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> --}}
-                <span class="brand-text font-weight-light">Departo CMS</span>
+                <a href="#" class="brand-link  text-decoration-none">
+                <img src="dist/img/departo.png" alt="departo Logo" class="brand-image img-circle "  >
+                <span class="brand-text font-weight-medium">Departo CMS</span>
                 </a>
         
                 <!-- Sidebar -->
