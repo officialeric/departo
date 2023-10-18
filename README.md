@@ -19,7 +19,7 @@ Departo is accessible, powerful, and provides tools required for large, robust d
 ## About Programmers
 
 -[Erick Ernest](https://github.com/officialeric)
--[Kadilana Charles](https://github.com/Kadilana)
+& [Kadilana Charles](https://github.com/Kadilana)
 
 ## License
 
