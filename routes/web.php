@@ -23,3 +23,38 @@ Route::view('/about', 'index');
 // staff routes
 Route::view('/admin', 'staff\admin');
 Route::post('/admin', [UserController::class, 'adminLogin']);
+
+//side menu
+Route::view('/dashboard ', 'staff\admin');
+Route::view('/add-staff ', 'staff\addStaff');
+Route::view('/view-staff ', 'staff\viewStaff');
+
+Route::view('/add-student ', 'staff\addStudent');
+Route::view('/view-student ', 'staff\viewStudent');
+
+Route::view('/add-section ', 'staff\addSection');
+Route::view('/view-section ', 'staff\viewSection');
+
+Route::view('/add-task ', 'staff\addTask');
+Route::view('/view-task ', 'staff\viewTask');
+
+Route::view('/add-role ', 'staff\addRole');
+Route::view('/view-role ', 'staff\viewRole');
+
+Route::view('/add-class ', 'staff\addClass');
+Route::view('/view-class ', 'staff\viewClass');
+
+Route::view('/add-module ', 'staff\addModule');
+Route::view('/view-module ', 'staff\viewModule');
+
+Route::view('/issues', 'staff\issues');
+
+Route::view('/notification ', 'staff\notification');
+
+Route::view('/profile ', 'staff\profile');
+
+Route::get('/logout ', [UserController::class, 'logout']);
+
+
+
+
