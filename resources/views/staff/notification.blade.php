@@ -3,6 +3,6 @@
 
 @section('content')
 
-    <h1>notifications</h1>
+    <h1>Notifications</h1>
 
 @endsection
