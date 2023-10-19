@@ -4,35 +4,47 @@
 @section('content')
 
     <h1>List of all staffs</h1>
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">S/N</th>
-            <th scope="col">Full Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Module(s)</th>
-            <th scope="col">Class(es)</th>
-            <th scope="col">Phone</th>
-            <th scope="col">Section</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>John Doe</td>
-            <td>johndoe@example.sth</td>
-            <td>Networking, Computer Maintenance, Programming</td>
-            <td>OD22IT, OD22COE, OD22MFT</td>
-            <td>0625-000-000</td>
-            <td>IPT</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title"></h3>
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body">
+        <table id="example1" class="table table-bordered table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Full Name</th>
+              <th>Email</th>
+              <th>Phone No.</th>
+              <th>Section</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John J, Doe</td>
+              <td>Johndoe@example.sth</td>
+              <td>0789-000-000</td>
+              <td>IPT</td>
+              <td>
+                <a href="#">
+                  <button class="btn btn-info">View Profile</button>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Full Name</th>
+              <th>Email</th>
+              <th>Phone No.</th>
+              <th>Section</th>
+              <th>Action</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <!-- /.card-body -->
+    </div>
 
 @endsection
