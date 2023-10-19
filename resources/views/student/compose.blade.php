@@ -9,10 +9,10 @@
 <body>
    
     <header>
-        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 ">
+        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 mt-6">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                 <a href="{{ url('/') }}" class="flex items-center">
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.cntQ2ZcMSiQ8DR01bIfDjgHaHa%26pid%3DApi&f=1&ipt=766acddc51cd4580b6f7fe966d7af935963d8c3f529b624c14b701266380bbe5&ipo=images" class="mr-3 h-12 sm:h-9" alt="Departo Logo" />
+                    <img src="dist/img/departo.png" class="mr-3 h-12 sm:h-9" alt="Departo Logo" />
                     <span class="self-center text-xl font-semibold whitespace-nowrap ">Departo</span>
                 </a>
                 <div class="flex items-center lg:order-2">

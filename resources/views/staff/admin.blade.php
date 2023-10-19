@@ -4,7 +4,11 @@
 @section('title', 'Dashboard')
 
 @section('content')
+ <!-- Preloader -->
+ <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/departo.png" alt="Departo-Logo" height="60" width="60">
 
+</div>
 <div class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
