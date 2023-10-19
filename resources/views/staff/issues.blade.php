@@ -2,7 +2,12 @@
 @section('title','Issues')
 
 @section('content')
-
-    <h1>Issues</h1>
+<h4>Issues</h4>
+      
+<div class="card">
+    <div class="card-body">
+        All issues 
+    </div>
+</div>
 
 @endsection

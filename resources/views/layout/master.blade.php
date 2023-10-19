@@ -28,6 +28,10 @@
   <!-- login form css -->
   <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css">
    <link rel="stylesheet" href="/login.style.css">
+     <!-- CSS -->
+     <link rel="stylesheet" href="dist/css/style.css">
+      <!-- Fontawesome CDN Link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -394,7 +398,7 @@
         
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
-                <div class="p-4">
+                <div class="p-4 container-md">
 
                 @yield('content')
 
@@ -403,9 +407,8 @@
             <!-- /.content-wrapper -->
 
     </div>
-    <footer class="main-footer">
-        <strong>Copyright &copy; 2023 <a href="#">Departo</a>.</strong>
-        All rights reserved.
+    <footer class="main-footer text-center">
+        <strong>&copy;  Departo  v1.0</strong>
         
     </footer>
 
@@ -505,5 +508,7 @@ $.widget.bridge('uibutton', $.ui.button)
 <script src="dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="dist/js/pages/dashboard.js"></script>
+<!-- JavaScript -->
+<script src="dist/js/script.js"></script>
 </body>
 </html>
