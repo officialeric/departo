@@ -396,15 +396,15 @@
                 <!-- /.sidebar -->
             </aside>
         
-            <!-- Content Wrapper. Contains page content -->
+        <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
-                <div class="p-4">
+                <div class="px-5 py-4">
 
-                @yield('content')
+                    @yield('content')
 
                 </div>
             </div>
-            <!-- /.content-wrapper -->
+        <!-- /.content-wrapper -->
 
     </div>
     <footer class="main-footer">
