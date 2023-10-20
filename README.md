@@ -1,5 +1,5 @@
 <p align="center"><a href="#" target="">
-<img src="https://o.remove.bg/downloads/eb647983-7ad8-4f67-ab99-b7e353601788/th-3103370796-removebg-preview.png" width="300" alt="departo Logo">
+<img src="public/dist/img/departo.png" width="300" alt="departo Logo">
 </a></p>
 
 
