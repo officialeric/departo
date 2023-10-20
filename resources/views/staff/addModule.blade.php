@@ -19,15 +19,13 @@
           </div>
 
           <div class="form-group">
-            <label>Multiple</label>
-            <select class="select2" multiple="multiple" data-placeholder="Select a State" style="width: 100%;">
-              <option>Alabama</option>
-              <option>Alaska</option>
-              <option>California</option>
-              <option>Delaware</option>
-              <option>Tennessee</option>
-              <option>Texas</option>
-              <option>Washington</option>
+            <label>Classes</label>
+            <p>Select all classes which take this module</p>
+            <select class="select2" multiple="multiple" data-placeholder="Select classes" style="width: 100%;">
+              <option>OD22IT</option>
+              <option>OD22COE</option>
+              <option>OD22MFT</option>
+              <option>OD22ETE</option>
             </select>
           </div>
        
