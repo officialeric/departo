@@ -27,7 +27,7 @@
               <td>0789-000-000</td>
               <td>IPT</td>
               <td>
-                <a href="#">
+                <a href="/view-profile">
                   <button class="btn btn-info">View Profile</button>
                 </a>
               </td>

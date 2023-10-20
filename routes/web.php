@@ -53,6 +53,8 @@ Route::view('/notification ', 'staff\notification');
 
 Route::view('/profile ', 'staff\profile');
 
+Route::view('/view-profile', 'staff\viewProfile');
+
 Route::get('/logout ', [UserController::class, 'logout']);
 
 
