@@ -11,6 +11,7 @@
       <!-- /.card-header -->
       <div class="card-body">
         <table id="example1" class="table table-bordered table-striped table-hover">
+          
           <thead>
             <tr>
               <th>Full Name</th>
@@ -20,6 +21,7 @@
               <th>Action</th>
             </tr>
           </thead>
+
           <tbody>
             <tr>
               <td>John J, Doe</td>
@@ -27,12 +29,13 @@
               <td>0789-000-000</td>
               <td>IPT</td>
               <td>
-                <a href="/view-profile">
+                <a href="/view-staff-profile">
                   <button class="btn btn-info">View Profile</button>
                 </a>
               </td>
             </tr>
           </tbody>
+
           <tfoot>
             <tr>
               <th>Full Name</th>
@@ -42,6 +45,7 @@
               <th>Action</th>
             </tr>
           </tfoot>
+
         </table>
       </div>
       <!-- /.card-body -->

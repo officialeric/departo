@@ -15,7 +15,6 @@
             <tr>
               <th>Full Name</th>
               <th>Registration no.</th>
-              <th>Email</th>
               <th>Phone No.</th>
               <th>Class</th>
               <th>Action</th>
@@ -25,11 +24,10 @@
             <tr>
               <td>Doe, John John</td>
               <td>220220000000</td>
-              <td>Johndoe@example.sth</td>
-              <td>0789-000-000</td>
+              <td><a href="tel:+">0789-000-000</a></td>
               <td>OD22IT</td>
               <td>
-                <a href="#">
+                <a href="view-student-profile">
                   <button class="btn btn-info">View Profile</button>
                 </a>
               </td>
@@ -39,7 +37,6 @@
             <tr>
               <th>Full Name</th>
               <th>Registration no.</th>
-              <th>Email</th>
               <th>Phone No.</th>
               <th>Class</th>
               <th>Action</th>
