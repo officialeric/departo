@@ -436,6 +436,18 @@
                                                    <p></p>
                                                 </td>
                                               </tr>
+
+                                              <tr data-widget="expandable-table" aria-expanded="false">
+                                                <td>Second Semister</td>
+                                                <td>2.123</td>
+                                                <td class="text-center"><span class="badge badge-warning">50%</span></td>
+                                                <td class="text-center"><span class="badge badge-success">Pass</span></td>
+                                              </tr>
+                                              <tr class="expandable-body">
+                                                <td colspan="5">
+                                                   <p></p>
+                                                </td>
+                                              </tr>
                                             </tbody>
                                           </table>
 
