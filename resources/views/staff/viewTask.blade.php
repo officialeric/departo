@@ -26,10 +26,10 @@
               <td>2023-10-22</td>
               <td>
                 <a href="#">
-                  <button class="btn btn-info">Details</button>
+                  <button class="btn btn-primary"><i class="fas fa-info-circle mr-1"></i>Details</button>
                 </a>
                 <a href="#">
-                  <button class="btn btn-danger">Abort</button>
+                  <button class="btn btn-danger"><i class="fas fa-times-circle mr-1"></i>Abort</button>
                 </a>
               </td>
             </tr>

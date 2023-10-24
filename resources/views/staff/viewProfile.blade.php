@@ -329,6 +329,8 @@
             </section>
 
 
+
+
         <!-- read only student profile -->
             <section class="content">
                 <div class="container-fluid">
@@ -398,24 +400,28 @@
                                             <span class="description">- Second Year Diploma</span>
                                         </div>
 
-                                        <p><strong><i class="fas fa-building mr-1"></i> Department Identity</strong></p>
+                                        <p><strong><i class="fas fa-building mr-1"></i> Departmental Info</strong></p>
 
                                         <table class="table mb-5">
                                             <thead>
-                                            <tr>
-                                                <th>Registration no.</th>
-                                                <td>22022000000</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Class</th>
-                                                <td>OD22IT</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>Registration no.</th>
+                                                    <td>22022000000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Class</th>
+                                                    <td>OD22IT</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Status</th>
+                                                    <td><span class="badge badge-success">Ongoing</span>,  <span class="badge badge-danger">Disco</span>,  <span class="badge badge-warning">Retake</span></td>
+                                                </tr>
                                             </thead>
                                         </table>
 
                                         <p><strong><i class="fas fa-cube mr-1"></i> Current Scores</strong></p>
 
-                                        <table class="table table-bordered table-hover">
+                                        <table class="table table-bordered table-hover mb-5">
                                             <thead>
                                               <tr>
                                                 <th>Period</th>
@@ -426,52 +432,257 @@
                                             </thead>
                                             <tbody>
                                               <tr data-widget="expandable-table" aria-expanded="false">
-                                                <td>First Semister</td>
+                                                <td class="fw-bold">First Year</td>
                                                 <td>0.123</td>
                                                 <td class="text-center"><span class="badge badge-danger">10%</span></td>
                                                 <td class="text-center"><span class="badge badge-danger">Fail</span></td>
                                               </tr>
                                               <tr class="expandable-body">
                                                 <td colspan="5">
-                                                   <p></p>
+                                                    <div class="card"> 
+                                                        <div class="card-header">
+                                                            <strong><i class="far fa-calendar-alt mr-1"></i> Semister 1</strong>
+
+                                                            <div class="card-tools">
+                                                                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                                                                    <i class="fas fa-minus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card-body">
+                                                            <table class="table">
+                                                                <thead>
+                                                                  <tr>
+                                                                    <th scope="col">Module</th>
+                                                                    <th scope="col">Pass Mark</th>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <td>Maintenance</td>
+                                                                    <td class="text-center"><span class="badge badge-warning">40%</span></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td>Algebra</td>
+                                                                    <td class="text-center"><span class="badge badge-success">80%</span></td>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card"> 
+                                                        <div class="card-header">
+                                                            <strong><i class="far fa-calendar-alt mr-1"></i> Semister 2</strong>
+
+                                                            <div class="card-tools">
+                                                                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                                                                    <i class="fas fa-minus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card-body">
+                                                            <table class="table">
+                                                                <thead>
+                                                                  <tr>
+                                                                    <th scope="col">Module</th>
+                                                                    <th scope="col">Pass Mark</th>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <td>Networking</td>
+                                                                    <td class="text-center"><span class="badge badge-warning">40%</span></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td>Programming</td>
+                                                                    <td class="text-center"><span class="badge badge-success">80%</span></td>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                               </tr>
 
                                               <tr data-widget="expandable-table" aria-expanded="false">
-                                                <td>Second Semister</td>
+                                                <td class="fw-bold">Second Year</td>
                                                 <td>2.123</td>
                                                 <td class="text-center"><span class="badge badge-warning">50%</span></td>
                                                 <td class="text-center"><span class="badge badge-success">Pass</span></td>
                                               </tr>
                                               <tr class="expandable-body">
                                                 <td colspan="5">
-                                                   <p></p>
+                                                    <div class="card"> 
+                                                        <div class="card-header">
+                                                            <strong><i class="far fa-calendar-alt mr-1"></i> Semister 1</strong>
+
+                                                            <div class="card-tools">
+                                                                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                                                                    <i class="fas fa-minus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card-body">
+                                                            <table class="table">
+                                                                <thead>
+                                                                  <tr>
+                                                                    <th scope="col">Module</th>
+                                                                    <th scope="col">Pass Mark</th>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <td>Programming</td>
+                                                                    <td class="text-center"><span class="badge badge-success">80%</span></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td>Networking</td>
+                                                                    <td class="text-center"><span class="badge badge-warning">40%</span></td>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card"> 
+                                                        <div class="card-header">
+                                                            <strong><i class="far fa-calendar-alt mr-1"></i> Semister 2</strong>
+
+                                                            <div class="card-tools">
+                                                                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                                                                    <i class="fas fa-minus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card-body">
+                                                            <table class="table">
+                                                                <thead>
+                                                                  <tr>
+                                                                    <th scope="col">Module</th>
+                                                                    <th scope="col">Pass Mark</th>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <td>Architecture</td>
+                                                                    <td class="text-center"><span class="badge badge-danger">10%</span></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td>Event Driven Programming</td>
+                                                                    <td class="text-center"><span class="badge badge-warning">50%</span></td>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                              </tr>
+
+                                              <tr data-widget="expandable-table" aria-expanded="false">
+                                                <td class="fw-bold">Third Year</td>
+                                                <td>3.123</td>
+                                                <td class="text-center"><span class="badge badge-success">80%</span></td>
+                                                <td class="text-center"><span class="badge badge-success">Pass</span></td>
+                                              </tr>
+                                              <tr class="expandable-body">
+                                                <td colspan="5">
+                                                    <div class="card"> 
+                                                        <div class="card-header">
+                                                            <strong><i class="far fa-calendar-alt mr-1"></i> Semister 1</strong>
+
+                                                            <div class="card-tools">
+                                                                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                                                                    <i class="fas fa-minus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card-body">
+                                                            <table class="table">
+                                                                <thead>
+                                                                  <tr>
+                                                                    <th scope="col">Module</th>
+                                                                    <th scope="col">Pass Mark</th>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <td>Mobile Application</td>
+                                                                    <td class="text-center"><span class="badge badge-warning">49%</span></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td>Java</td>
+                                                                    <td class="text-center"><span class="badge badge-success">80%</span></td>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card"> 
+                                                        <div class="card-header">
+                                                            <strong><i class="far fa-calendar-alt mr-1"></i> Semister 2</strong>
+
+                                                            <div class="card-tools">
+                                                                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                                                                    <i class="fas fa-minus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card-body">
+                                                            <table class="table">
+                                                                <thead>
+                                                                  <tr>
+                                                                    <th scope="col">Module</th>
+                                                                    <th scope="col">Pass Mark</th>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <td>Web Development</td>
+                                                                    <td class="text-center"><span class="badge badge-success">90%</span></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td>Full-stack Development</td>
+                                                                    <td class="text-center"><span class="badge badge-success">80%</span></td>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                               </tr>
                                             </tbody>
                                           </table>
 
-                                        <p><strong><i class="fas fa-building mr-1"></i> Contact Info</strong></p>
+                                        <p><strong><i class="fas fa-phone mr-1"></i> Contact Info</strong></p>
 
                                         <table class="table mb-5">
                                             <thead>
                                                 <tr>
-                                                <th>Email</th>
-                                                <td>johndoe@sth.sth</td>
-                                                <th></th>
+                                                    <th>Full Name</th>
+                                                    <td>John John Doe</td>
                                                 </tr>
                                                 <tr>
-                                                <th>Phone no.</th>
-                                                <td>0789 000 000</td>
+                                                    <th>Email</th>
+                                                    <td>johndoe@sth.sth</td>
                                                 </tr>
                                                 <tr>
-                                                <th>Address</th>
-                                                <td>xyz Main Street, 
-                                                    Postal Code: 12345, 
-                                                    House Number: 001</td>
+                                                    <th>Phone no.</th>
+                                                    <td>0789 000 000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Address</th>
+                                                    <td>xyz Main Street, 
+                                                        Postal Code: 12345, 
+                                                        House Number: 001
+                                                    </td>
                                                 </tr>
                                             </thead>
-                                            </table>
+                                        </table>
                                         
 
                                     </div>

@@ -57,6 +57,8 @@ Route::view('/view-staff-profile', 'staff\viewProfile');
 
 Route::view('/view-student-profile', 'staff\viewProfile');
 
+Route::view('/view-section-detail', 'staff\viewDetails');
+
 Route::get('/logout ', [UserController::class, 'logout']);
 
 

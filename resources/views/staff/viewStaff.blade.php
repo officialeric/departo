@@ -30,7 +30,7 @@
               <td>IPT</td>
               <td>
                 <a href="/view-staff-profile">
-                  <button class="btn btn-info">View Profile</button>
+                  <button class="btn btn-primary"><i class="fas fa-info-circle mr-1"></i>View Profile</button>
                 </a>
               </td>
             </tr>
