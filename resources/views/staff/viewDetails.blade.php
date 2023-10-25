@@ -101,110 +101,51 @@
                                     </tbody>
                                   </table>
 
-                                <p><strong><i class="fas fa-phone mr-1"></i> Contact Info</strong></p>
-
+                                <p><strong><i class="fas fa-users mr-1"></i> Staffs In Section</strong></p>
                                 <div class="card">
-                                    
-                                </div>
+                                    <div class="card-header">
+                                      <h3 class="card-title"></h3>
+                                    </div>
+                                    <!-- /.card-header -->
+                                    <div class="card-body">
+                                      <table id="details" class="table table-bordered table-striped table-hover">
+                                        <thead>
+                                          <tr>
+                                            <th>Code</th>
+                                            <th>Name</th>
+                                            <th>Joined</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>183</td>
+                                            <td><a href="/view-staff-profile" style="text-decoration: none" class="text-muted">John Doe</a></td>
+                                            <td>11-7-2014</td>
+                                          </tr>
+                                          <tr>
+                                            <td>219</td>
+                                            <td><a href="/view-staff-profile" style="text-decoration: none" class="text-muted">Alexander Pierce</a></td>
+                                            <td>11-7-2014</td>
+                                          </tr>
+                                          <tr>
+                                            <td>657</td>
+                                            <td><a href="/view-staff-profile" style="text-decoration: none" class="text-muted">Bob Doe</a></td>
+                                            <td>11-7-2014</td>
+                                          </tr>
+                                          <tr>
+                                            <td>175</td>
+                                            <td><a href="/view-staff-profile" style="text-decoration: none" class="text-muted">Mike Doe</a></td>
+                                            <td>11-7-2014</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <!-- /.card-body -->
+                                  </div>
 
                             </div>
                             <!-- /.post -->
 
-                        </div>
-                        <!-- /.tab-pane -->
-                        <div class="tab-pane" id="timeline">
-                            <!-- The timeline -->
-                            <div class="timeline timeline-inverse">
-                                <!-- timeline time label -->
-                                <div class="time-label">
-                                    <span class="bg-danger">
-                                        10 Feb. 2014
-                                    </span>
-                                </div>
-                                <!-- /.timeline-label -->
-                                <!-- timeline item -->
-                                <div>
-                                    <i class="fas fa-envelope bg-primary"></i>
-
-                                    <div class="timeline-item">
-                                        <span class="time"><i class="far fa-clock"></i> 12:05</span>
-
-                                        <h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
-
-                                        <div class="timeline-body">
-                                            Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
-                                            weebly ning heekya handango imeem plugg dopplr jibjab, movity
-                                            jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
-                                            quora plaxo ideeli hulu weebly balihoo...
-                                        </div>
-                                        <div class="timeline-footer">
-                                            <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                                            <a href="#" class="btn btn-danger btn-sm">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END timeline item -->
-                                <!-- timeline item -->
-                                <div>
-                                    <i class="fas fa-user bg-info"></i>
-
-                                    <div class="timeline-item">
-                                        <span class="time"><i class="far fa-clock"></i> 5 mins ago</span>
-
-                                        <h3 class="timeline-header border-0"><a href="#">Sarah Young</a> accepted your friend request
-                                        </h3>
-                                    </div>
-                                </div>
-                                <!-- END timeline item -->
-                                <!-- timeline item -->
-                                <div>
-                                    <i class="fas fa-comments bg-warning"></i>
-
-                                    <div class="timeline-item">
-                                        <span class="time"><i class="far fa-clock"></i> 27 mins ago</span>
-
-                                        <h3 class="timeline-header"><a href="#">Jay White</a> commented on your post</h3>
-
-                                        <div class="timeline-body">
-                                            Take me to your leader!
-                                            Switzerland is small and neutral!
-                                            We are more like Germany, ambitious and misunderstood!
-                                        </div>
-                                        <div class="timeline-footer">
-                                            <a href="#" class="btn btn-warning btn-flat btn-sm">View comment</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END timeline item -->
-                                <!-- timeline time label -->
-                                <div class="time-label">
-                                <span class="bg-success">
-                                    3 Jan. 2014
-                                </span>
-                                </div>
-                                <!-- /.timeline-label -->
-                                <!-- timeline item -->
-                                <div>
-                                <i class="fas fa-camera bg-purple"></i>
-
-                                <div class="timeline-item">
-                                    <span class="time"><i class="far fa-clock"></i> 2 days ago</span>
-
-                                    <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
-
-                                    <div class="timeline-body">
-                                    <img src="https://placehold.it/150x100" alt="...">
-                                    <img src="https://placehold.it/150x100" alt="...">
-                                    <img src="https://placehold.it/150x100" alt="...">
-                                    <img src="https://placehold.it/150x100" alt="...">
-                                    </div>
-                                </div>
-                                </div>
-                                <!-- END timeline item -->
-                                <div>
-                                    <i class="far fa-clock bg-gray"></i>
-                                </div>
-                            </div>
                         </div>
                         <!-- /.tab-pane -->
 
