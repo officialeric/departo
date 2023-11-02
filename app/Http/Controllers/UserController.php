@@ -3,16 +3,27 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class UserController extends Controller
 {
-    public function __construct(){
+    public function ditStaffs()
+    {
+        $staffs = DB::connection('dit')->table('staffs')->where('department', 'computer')->get();
 
-    $this->middleware('guest')->except('logout');
-    
+        return view('staff.viewStaff', ['staffs' => $staffs]);
     }
 
-    public function logout(){
+//    public function __construct()
+//    {
+//
+//        $this->middleware('guest')->except('logout');
+//
+//    }
+
+    public function logout()
+    {
         auth()->logout();
 
         return redirect('/admin');

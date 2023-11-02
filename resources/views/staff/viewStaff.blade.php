@@ -11,7 +11,7 @@
       <!-- /.card-header -->
       <div class="card-body">
         <table id="example1" class="table table-bordered table-striped table-hover">
-          
+
           <thead>
             <tr>
               <th>Full Name</th>
@@ -23,17 +23,19 @@
           </thead>
 
           <tbody>
-            <tr>
-              <td>John J, Doe</td>
-              <td>Johndoe@example.sth</td>
-              <td>0789-000-000</td>
-              <td>IPT</td>
-              <td>
-                <a href="/view-staff-profile">
-                  <button class="btn btn-primary"><i class="fas fa-info-circle mr-1"></i>View Profile</button>
-                </a>
-              </td>
-            </tr>
+              @foreach($staffs as $staff)
+                <tr>
+                  <td>{{$staff->fullname}}</td>
+                  <td>{{$staff->email}}</td>
+                  <td>{{$staff->phone_no}}</td>
+                  <td></td>
+                  <td>
+                    <a href="/view-staff-profile/{{$staff->id}}">
+                      <button class="btn btn-primary"><i class="fas fa-info-circle mr-1"></i>View Profile</button>
+                    </a>
+                  </td>
+                </tr>
+              @endforeach
           </tbody>
 
           <tfoot>

@@ -59,8 +59,8 @@
     @auth
         <div class="wrapper">
 
-           
-        
+
+
             <!-- Navbar -->
             <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <!-- Left navbar links -->
@@ -75,7 +75,7 @@
                 <a href="#" class="nav-link">Contact</a>
                 </li> --}}
             </ul>
-        
+
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
                 <!-- Navbar Search -->
@@ -99,8 +99,8 @@
                     </form>
                 </div>
                 </li>
-        
-                
+
+
                 <!-- Notifications Dropdown Menu -->
                 <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#">
@@ -142,7 +142,7 @@
             </nav>
             <!-- /.navbar -->
 
-        
+
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
@@ -150,12 +150,12 @@
                 <img src="dist/img/departo.png" alt="departo Logo" class="brand-image img-circle "  >
                 <span class="brand-text font-weight-medium">Departo CMS</span>
             </a>
-    
+
             <!-- Sidebar -->
             <div class="sidebar">
             <!-- Sidebar user panel (optional) -->
-            
-    
+
+
             <!-- SidebarSearch Form -->
             <div class="form-inline mt-3">
                 <div class="input-group" data-widget="sidebar-search">
@@ -167,43 +167,43 @@
                 </div>
                 </div>
             </div>
-    
+
             <!-- Sidebar Menu -->
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library -->
-                <li class="nav-item menu-open">
-                    <a href="/dashboard" wire:click="selectMenu('dashboard')" class="nav-link active">
-                    <i class="nav-icon fas fa-tachometer-alt"></i>
-                    <p>
-                        Dashboard
-                        {{-- <i class="right fas fa-angle-left"></i> --}}
-                    </p>
-                    </a>
-                    
-                </li>
+                    <li class="nav-item menu-open">
+                        <a href="/dashboard" wire:click="selectMenu('dashboard')" class="nav-link active">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            Dashboard
+                            {{-- <i class="right fas fa-angle-left"></i> --}}
+                        </p>
+                        </a>
+
+                    </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-chalkboard-teacher"></i>
-                    <p>
-                        Staffs
-                        <i class="right fas fa-angle-left"></i>
-                    </p>
+                        <i class="nav-icon fas fa-chalkboard-teacher"></i>
+                        <p>
+                            Staffs
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
                     </a>
                     <ul class="nav nav-treeview ml-3">
-                    <li class="nav-item">
-                        <a href="/add-staff" wire:click="selectMenu('add-staff')" class="nav-link">
-                        <i class="fas fa-plus nav-icon"></i>
-                        <p>Add Staff</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/view-staff" wire:click="selectMenu('view-staff')" class="nav-link">
-                        <i class="far fa-list-alt nav-icon"></i>
-                        <p>View Staff</p>
-                        </a>
-                    </li>                  
+{{--                    <li class="nav-item">--}}
+{{--                        <a href="/add-staff" wire:click="selectMenu('add-staff')" class="nav-link">--}}
+{{--                        <i class="fas fa-plus nav-icon"></i>--}}
+{{--                        <p>Add Staff</p>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+                        <li class="nav-item">
+                            <a href="/view-staff" class="nav-link">
+                                <i class="far fa-list-alt nav-icon"></i>
+                                <p>View Staff</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -215,12 +215,12 @@
                     </p>
                     </a>
                     <ul class="nav nav-treeview ml-3">
-                    <li class="nav-item">
-                        <a href="/add-student" wire:click="selectMenu('add-student')" class="nav-link">
-                            <i class="fas fa-plus nav-icon"></i>                            
-                            <p>Add Student</p>
-                        </a>
-                    </li>
+{{--                    <li class="nav-item">--}}
+{{--                        <a href="/add-student" wire:click="selectMenu('add-student')" class="nav-link">--}}
+{{--                            <i class="fas fa-plus nav-icon"></i>--}}
+{{--                            <p>Add Student</p>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
                     <li class="nav-item">
                         <a href="/view-student" wire:click="selectMenu('view-student')" class="nav-link">
                             <i class="far fa-list-alt nav-icon"></i>
@@ -229,7 +229,7 @@
                     </li>
                 </li>
                 </ul>
-    
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                     <i class="fas fa-layer-group nav-icon"></i>
@@ -241,7 +241,7 @@
                     <ul class="nav nav-treeview ml-3">
                     <li class="nav-item">
                         <a href="/add-section" wire:click="selectMenu('add-section')" class="nav-link">
-                            <i class="fas fa-plus nav-icon"></i>                            
+                            <i class="fas fa-plus nav-icon"></i>
                             <p>Add Section</p>
                         </a>
                     </li>
@@ -253,7 +253,7 @@
                     </li>
                     </ul>
                 </li>
-    
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                     <i class="fas fa-tasks nav-icon"></i>
@@ -265,7 +265,7 @@
                     <ul class="nav nav-treeview ml-3">
                     <li class="nav-item">
                         <a href="/add-task" wire:click="selectMenu('add-task')" class="nav-link">
-                            <i class="fas fa-plus nav-icon"></i>                            
+                            <i class="fas fa-plus nav-icon"></i>
                             <p>Add Task</p>
                         </a>
                     </li>
@@ -277,7 +277,7 @@
                     </li>
                     </ul>
                 </li>
-    
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-user-tag nav-icon"></i>
@@ -289,7 +289,7 @@
                     <ul class="nav nav-treeview ml-3">
                     <li class="nav-item">
                         <a href="/add-role" wire:click="selectMenu('add-role')" class="nav-link">
-                            <i class="fas fa-plus nav-icon"></i>                            
+                            <i class="fas fa-plus nav-icon"></i>
                             <p>Add Role</p>
                         </a>
                     </li>
@@ -301,7 +301,7 @@
                     </li>
                     </ul>
                 </li>
-    
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                     <i class="fab fa-odnoklassniki-square nav-icon"></i>
@@ -319,7 +319,7 @@
                     </li>
                     </ul>
                 </li>
-    
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                     <i class="fas fa-book nav-icon"></i>
@@ -329,12 +329,12 @@
                     </p>
                     </a>
                     <ul class="nav nav-treeview ml-3">
-                    <li class="nav-item">
-                        <a href="/add-module" wire:click="selectMenu('add-module')" class="nav-link">
-                            <i class="fas fa-plus nav-icon"></i>                            
-                            <p>Add Module</p>
-                        </a>
-                    </li>
+{{--                    <li class="nav-item">--}}
+{{--                        <a href="/add-module" wire:click="selectMenu('add-module')" class="nav-link">--}}
+{{--                            <i class="fas fa-plus nav-icon"></i>--}}
+{{--                            <p>Add Module</p>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
                     <li class="nav-item">
                         <a href="/view-module" wire:click="selectMenu('view-module')" class="nav-link">
                             <i class="far fa-list-alt nav-icon"></i>
@@ -343,7 +343,7 @@
                     </li>
                     </ul>
                 </li>
-    
+
                 <li class="nav-item">
                     <a href="/issues" wire:click="selectMenu('issues')" class="nav-link">
                     <i class="fas fa-box-tissue nav-icon"></i>
@@ -352,7 +352,7 @@
                     </p>
                     </a>
                 </li>
-    
+
                 <li class="nav-item">
                     <a href="/notification" wire:click="selectMenu('notification')" class="nav-link">
                         <i class="fas fa-bell nav-icon"></i>
@@ -360,9 +360,9 @@
                             Notifications
                         </p>
                     </a>
-                    
+
                 </li>
-    
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-cog nav-icon"></i>
@@ -374,7 +374,7 @@
                     <ul class="nav nav-treeview ml-3">
                         <li class="nav-item">
                             <a href="pages/charts/chartjs.html" class="nav-link">
-                                <i class="fas fa-plus nav-icon"></i>                            
+                                <i class="fas fa-plus nav-icon"></i>
                                 <p>Add Module</p>
                             </a>
                         </li>
@@ -386,7 +386,7 @@
                         </li>
                     </ul>
                 </li>
-    
+
                 <li class="nav-item">
                     <a href="/logout" class="nav-link">
                     <i class="fas fa-sign-out-alt nav-icon"></i>
@@ -394,9 +394,9 @@
                         Log Out
                     </p>
                     </a>
-                    
+
                 </li>
-    
+
                 <div class="user-panel mt-5 pb-3 mb-3 d-flex">
                     <div class="image">
                     <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
@@ -412,7 +412,7 @@
         </aside>
 
 
-        
+
         <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
                 <div class="px-5 py-4">
@@ -426,7 +426,7 @@
     </div>
     <footer class="main-footer text-center">
         <strong>&copy;  Departo  v1.0</strong>
-        
+
     </footer>
 
     <!-- Control Sidebar -->
@@ -449,19 +449,19 @@
                 </h1>
                 <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
                     Welcome to the College Department Activities Management System,
-                    the central hub for orchestrating and optimizing the myriad 
-                    activities that propel our academic departments forward. 
-                    This cutting-edge software solution is finely tuned to enhance 
-                    the efficiency and organization of all departmental operations, 
-                    ensuring that students, faculty, and staff can focus on their 
-                    core mission: education and research. 
+                    the central hub for orchestrating and optimizing the myriad
+                    activities that propel our academic departments forward.
+                    This cutting-edge software solution is finely tuned to enhance
+                    the efficiency and organization of all departmental operations,
+                    ensuring that students, faculty, and staff can focus on their
+                    core mission: education and research.
                 </p>
             </div>
-    
+
             <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
                 <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
                 <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
-    
+
                 <div class="card bg-glass">
                     <div class="card-body px-4 py-5 px-md-5">
                         <form action="/admin" method="post">
@@ -471,13 +471,13 @@
                                 <label class="form-label fw-bolder" for="form3Example3">Email address</label>
                                 <input type="email" name="loginemail" id="form3Example3" class="form-control" />
                             </div>
-            
+
                             <!-- Password input -->
                             <div class="form-outline mb-4">
                                 <label class="form-label fw-bolder" for="form3Example4">Password</label>
                                 <input type="password" name="loginpassword" id="form3Example4" class="form-control" />
                             </div>
-            
+
                             <!-- Submit button -->
                             <button type="submit" class="btn btn-primary btn-block mb-4 fw-bold">
                                 Login
@@ -583,7 +583,7 @@ $.widget.bridge('uibutton', $.ui.button)
         "responsive": true,
       });
     });
-    
+
   </script>
 </body>
 </html>

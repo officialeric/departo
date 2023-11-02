@@ -21,7 +21,7 @@ return new class extends Migration
             // $table->foreignId('module_id')->constrained();
             // $table->foreignId('role_id')->constrained();
             // $table->foreignId('section_id')->constrained();
-            $table->timestamp('email_verified_at');
+            $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

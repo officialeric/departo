@@ -27,7 +27,7 @@ Route::post('/admin', [UserController::class, 'adminLogin']);
 //side menu
 Route::view('/dashboard ', 'staff\admin');
 Route::view('/add-staff ', 'staff\addStaff');
-Route::view('/view-staff ', 'staff\viewStaff');
+Route::get('/view-staff', [UserController::class, 'ditStaffs']);
 
 Route::view('/add-student ', 'staff\addStudent');
 Route::view('/view-student ', 'staff\viewStudent');
@@ -58,6 +58,14 @@ Route::view('/view-staff-profile', 'staff\viewProfile');
 Route::view('/view-student-profile', 'staff\viewProfile');
 
 Route::view('/view-section-detail', 'staff\viewDetails');
+
+Route::view('/view-task-detail', 'staff\viewDetails');
+
+Route::view('/view-role-detail', 'staff\viewDetails');
+
+Route::view('/view-class-detail', 'staff\viewDetails');
+
+Route::view('/view-module-detail', 'staff\viewDetails');
 
 Route::get('/logout ', [UserController::class, 'logout']);
 

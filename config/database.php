@@ -93,6 +93,17 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
+//        external database for the staffs data
+
+        'dit' => [
+            'driver' => 'mysql',
+            'host' => 'localhost',
+            'database' => 'dit',
+            'username' => 'root',
+            'password' => '',
+        ],
+
+
     ],
 
     /*
