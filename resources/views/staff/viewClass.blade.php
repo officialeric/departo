@@ -27,7 +27,7 @@
               <td>7</td>
               <td>80%</td>
               <td>
-                  <a href="/view-class-detail">
+                  <a href="/view-detail-class">
                       <button class="btn btn-primary"><i class="fas fa-info-circle mr-1"></i>Details</button>
                   </a>
               </td>

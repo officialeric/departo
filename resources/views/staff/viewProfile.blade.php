@@ -3,6 +3,7 @@
 
 @section('content')
 
+    @if($role === 'staff')
         <!-- read-only staff profile -->
             <section class="content">
                 <div class="container-fluid">
@@ -18,12 +19,12 @@
                                 alt="User profile picture">
                         </div>
 
-                        <h3 class="profile-username text-center">John J, Doe</h3>
+                        <h3 class="profile-username text-center">{{ $userData->fullname }}</h3>
 
                         <p class="text-muted text-center">Software Engineer</p>
 
                         <p class="text-muted text-center">Office: <b>TT1</b></p>
-                        
+
                         </div>
                         <!-- /.card-body -->
                     </div>
@@ -39,14 +40,14 @@
 
                             <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
 
-                            <li class="text-muted">Kivule, Dar es salaam</li>
+                            <li class="text-muted">{{ $userData->location }}</li>
 
                             <hr>
 
                             <strong><i class="fas fa-pencil-alt mr-1"></i> Expertise</strong>
 
                                 <li class="text-muted">UI Design</li>
-                                <li class="text-muted">Programming</li>                                
+                                <li class="text-muted">Programming</li>
                                 <li class="text-muted">Maintenance</li>
                                 <li class="text-muted">Networking</li>
 
@@ -78,14 +79,14 @@
                                         <div class="user-block">
                                             <img class="img-circle img-bordered-sm" src="../../dist/img/user1-128x128.jpg" alt="user image">
                                             <span class="username">
-                                                <h3 class="profile-username">John J, Doe</h3>                                               
+                                                <h3 class="profile-username">John J, Doe</h3>
                                             </span>
                                             <span class="description">- A Lecturer</span>
                                         </div>
                                         <!-- /.user-block -->
                                         <p>
                                             Dedicated and passionate Computer Science Lecturer with a proven
-                                            track record of effective teaching and a strong commitment to student 
+                                            track record of effective teaching and a strong commitment to student
                                             success.
                                         </p>
 
@@ -148,22 +149,22 @@
                                               <thead>
                                                 <tr>
                                                   <th>Email</th>
-                                                  <td>johndoe@sth.sth</td>
+                                                  <td>{{ $userData->email }}</td>
                                                   <th></th>
                                                 </tr>
                                                 <tr>
                                                   <th>Phone no.</th>
-                                                  <td>0789 000 000</td>
+                                                  <td>{{ $userData->phone_no }}</td>
                                                 </tr>
                                                 <tr>
                                                   <th>Address</th>
-                                                  <td>xyz Main Street, 
-                                                    Postal Code: 12345, 
+                                                  <td>xyz Main Street,
+                                                    Postal Code: 12345,
                                                     House Number: 001</td>
                                                 </tr>
                                               </thead>
                                             </table>
-                                        
+
 
                                     </div>
                                     <!-- /.post -->
@@ -330,7 +331,7 @@
 
 
 
-
+@elseif($role === 'student')
         <!-- read only student profile -->
             <section class="content">
                 <div class="container-fluid">
@@ -346,10 +347,10 @@
                                 alt="User profile picture">
                         </div>
 
-                        <h3 class="profile-username text-center">John J, Doe</h3>
+                        <h3 class="profile-username text-center">{{ $studentData->fullname }}</h3>
 
                         <p class="text-muted text-center"><b>OD22IT</b></p>
-                        
+
                         </div>
                         <!-- /.card-body -->
                     </div>
@@ -365,13 +366,13 @@
 
                             <strong><i class="fas fa-pencil-alt mr-1"></i> Background</strong>
 
-                                <li class="text-muted">Graduated at : <i>St Pio Secondary School</i> in <i>2021</i> </li>
-                                <li class="text-muted">Studied from : <i>2018</i> to <i>2021</i></li>
+                                <li class="text-muted">Graduated at : <br> <i>{{ $studentData->graduated_at }}</i> </li>
+                                <li class="text-muted">Year of Graduation : <br> <i>{{ $studentData->year_of_graduation }}</i></li>
                             <hr>
 
                             <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
 
-                            <li class="text-muted">Kivule, Dar es salaam</li>
+                            <li class="text-muted">{{ $studentData->location }}</li>
 
                             <hr>
 
@@ -395,7 +396,7 @@
                                         <div class="user-block">
                                             <img class="img-circle img-bordered-sm" src="../../dist/img/user1-128x128.jpg" alt="user image">
                                             <span class="username">
-                                                <h3 class="profile-username">John J, Doe</h3>                                               
+                                                <h3 class="profile-username">John J, Doe</h3>
                                             </span>
                                             <span class="description">- Second Year Diploma</span>
                                         </div>
@@ -406,15 +407,21 @@
                                             <thead>
                                                 <tr>
                                                     <th>Registration no.</th>
-                                                    <td>22022000000</td>
+                                                    <td>{{ $studentData->registration_no }}</td>
                                                 </tr>
                                                 <tr>
                                                     <th>Class</th>
-                                                    <td>OD22IT</td>
+                                                    <td>{{ $studentData->class_id }}</td>
                                                 </tr>
                                                 <tr>
                                                     <th>Status</th>
-                                                    <td><span class="badge badge-success">Ongoing</span>,  <span class="badge badge-danger">Disco</span>,  <span class="badge badge-warning">Retake</span></td>
+                                                    @if($studentData->status == 'On going')
+                                                        <td><span class="badge badge-success">{{ $studentData->status }}</span></td>
+                                                    @elseif($studentData->status == 'Disco')
+                                                        <td><span class="badge badge-danger">{{ $studentData->status }}</span></td>
+                                                    @elseif($studentData->status == 'Retake')
+                                                        <td><span class="badge badge-warning">{{ $studentData->status }}</span></td>
+                                                    @endif
                                                 </tr>
                                             </thead>
                                         </table>
@@ -439,7 +446,7 @@
                                               </tr>
                                               <tr class="expandable-body">
                                                 <td colspan="5">
-                                                    <div class="card"> 
+                                                    <div class="card">
                                                         <div class="card-header">
                                                             <strong><i class="far fa-calendar-alt mr-1"></i> Semister 1</strong>
 
@@ -471,7 +478,7 @@
                                                               </table>
                                                         </div>
                                                     </div>
-                                                    <div class="card"> 
+                                                    <div class="card">
                                                         <div class="card-header">
                                                             <strong><i class="far fa-calendar-alt mr-1"></i> Semister 2</strong>
 
@@ -514,7 +521,7 @@
                                               </tr>
                                               <tr class="expandable-body">
                                                 <td colspan="5">
-                                                    <div class="card"> 
+                                                    <div class="card">
                                                         <div class="card-header">
                                                             <strong><i class="far fa-calendar-alt mr-1"></i> Semister 1</strong>
 
@@ -546,7 +553,7 @@
                                                               </table>
                                                         </div>
                                                     </div>
-                                                    <div class="card"> 
+                                                    <div class="card">
                                                         <div class="card-header">
                                                             <strong><i class="far fa-calendar-alt mr-1"></i> Semister 2</strong>
 
@@ -589,7 +596,7 @@
                                               </tr>
                                               <tr class="expandable-body">
                                                 <td colspan="5">
-                                                    <div class="card"> 
+                                                    <div class="card">
                                                         <div class="card-header">
                                                             <strong><i class="far fa-calendar-alt mr-1"></i> Semister 1</strong>
 
@@ -621,7 +628,7 @@
                                                               </table>
                                                         </div>
                                                     </div>
-                                                    <div class="card"> 
+                                                    <div class="card">
                                                         <div class="card-header">
                                                             <strong><i class="far fa-calendar-alt mr-1"></i> Semister 2</strong>
 
@@ -664,26 +671,23 @@
                                             <thead>
                                                 <tr>
                                                     <th>Full Name</th>
-                                                    <td>John John Doe</td>
+                                                    <td>{{ $studentData->fullname }}</td>
                                                 </tr>
                                                 <tr>
                                                     <th>Email</th>
-                                                    <td>johndoe@sth.sth</td>
+                                                    <td>{{ $studentData->email }}</td>
                                                 </tr>
                                                 <tr>
                                                     <th>Phone no.</th>
-                                                    <td>0789 000 000</td>
+                                                    <td>{{ $studentData->phone_no }}</td>
                                                 </tr>
                                                 <tr>
                                                     <th>Address</th>
-                                                    <td>xyz Main Street, 
-                                                        Postal Code: 12345, 
-                                                        House Number: 001
-                                                    </td>
+                                                    <td>{{ $studentData->address }}</td>
                                                 </tr>
                                             </thead>
                                         </table>
-                                        
+
 
                                     </div>
                                     <!-- /.post -->
@@ -847,6 +851,7 @@
                 <!-- /.row -->
                 </div><!-- /.container-fluid -->
             </section>
+    @endif
 
 
 

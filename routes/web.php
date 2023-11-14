@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\NotificationController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
@@ -30,7 +32,7 @@ Route::view('/add-staff ', 'staff\addStaff');
 Route::get('/view-staff', [UserController::class, 'ditStaffs']);
 
 Route::view('/add-student ', 'staff\addStudent');
-Route::view('/view-student ', 'staff\viewStudent');
+Route::get('/view-student ', [UserController::class, 'ditStudents']);
 
 Route::view('/add-section ', 'staff\addSection');
 Route::view('/view-section ', 'staff\viewSection');
@@ -49,26 +51,23 @@ Route::view('/view-module ', 'staff\viewModule');
 
 Route::view('/issues', 'staff\issues');
 
-Route::view('/notification ', 'staff\notification');
+Route::get('/notification-{type} ', [NotificationController::class, 'messages']);
+
+Route::view('/info ', 'staff\message');
 
 Route::view('/profile ', 'staff\profile');
 
-Route::view('/view-staff-profile', 'staff\viewProfile');
+Route::get('/view-profile-{role}/{id}', [ProfileController::class, 'showProfile']);
 
-Route::view('/view-student-profile', 'staff\viewProfile');
+Route::view('/view-detail-section', 'staff\viewDetails');
 
-Route::view('/view-section-detail', 'staff\viewDetails');
+Route::view('/view-detail-task', 'staff\viewDetails');
 
-Route::view('/view-task-detail', 'staff\viewDetails');
+Route::view('/view-detail-role', 'staff\viewDetails');
 
-Route::view('/view-role-detail', 'staff\viewDetails');
+Route::view('/view-detail-class', 'staff\viewDetails');
 
-Route::view('/view-class-detail', 'staff\viewDetails');
-
-Route::view('/view-module-detail', 'staff\viewDetails');
+Route::view('/view-detail-module', 'staff\viewDetails');
 
 Route::get('/logout ', [UserController::class, 'logout']);
-
-
-
 

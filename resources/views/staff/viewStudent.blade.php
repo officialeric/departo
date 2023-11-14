@@ -21,17 +21,19 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Doe, John John</td>
-              <td>220220000000</td>
-              <td><a href="tel:+">0789-000-000</a></td>
-              <td>OD22IT</td>
-              <td>
-                <a href="view-student-profile">
-                  <button class="btn btn-primary"><i class="fas fa-info-circle mr-1"></i>View Profile</button>
-                </a>
-              </td>
-            </tr>
+            @foreach($students as $student)
+                <tr>
+                    <td>{{ $student->fullname }}</td>
+                    <td>{{ $student->registration_no }}</td>
+                    <td><a href="tel:{{ $student->registration_no }}">{{ $student->phone_no }}</a></td>
+                    <td>{{ $student->class_id }}</td>
+                    <td>
+                        <a href="/view-profile-student/{{ $student->id }}">
+                            <button class="btn btn-primary"><i class="fas fa-info-circle mr-1"></i>View Profile</button>
+                        </a>
+                    </td>
+                </tr>
+            @endforeach
           </tbody>
           <tfoot>
             <tr>

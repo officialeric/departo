@@ -29,7 +29,7 @@
               <td>4</td>
               <td>80%</td>
               <td>
-                  <a href="/view-module-detail">
+                  <a href="/view-detail-module">
                       <button class="btn btn-primary"><i class="fas fa-info-circle mr-1"></i>Details</button>
                   </a>
               </td>

@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Dit;
+use App\Models\DitStudents;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 
 
@@ -10,9 +13,16 @@ class UserController extends Controller
 {
     public function ditStaffs()
     {
-        $staffs = DB::connection('dit')->table('staffs')->where('department', 'computer')->get();
+        $staffs = Dit::where('department', 'computer')->get();
 
         return view('staff.viewStaff', ['staffs' => $staffs]);
+    }
+
+    public function ditStudents()
+    {
+        $students = DitStudents::where('department', 'computer')->get();
+
+        return view('staff.viewStudent', ['students' => $students]);
     }
 
 //    public function __construct()

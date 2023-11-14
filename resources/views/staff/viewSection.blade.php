@@ -25,7 +25,7 @@
               <td>John Doe</td>
               <td>10</td>
               <td>
-                <a href="/view-section-detail">
+                <a href="/view-detail-section">
                   <button class="btn btn-primary"><i class="fas fa-info-circle mr-1"></i>Details</button>
                 </a>
               </td>

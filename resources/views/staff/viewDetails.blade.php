@@ -428,11 +428,11 @@
                                             <thead>
                                             <tr>
                                                 <th>Total Members</th>
-                                                <td><a href="/view-staff-profile" class="text-muted" style="text-decoration: none">80</a></td>
+                                                <td>80</td>
                                             </tr>
                                             <tr>
                                                 <th>Class Representative</th>
-                                                <td><a href="/view-student-profile" style="text-decoration: none">John Doe</a></td>
+                                                <td>John Doe</td>
                                             </tr>
                                             <tr>
                                                 <th>Pass Rate</th>
@@ -456,15 +456,15 @@
                                                     <tbody>
                                                     <tr>
                                                         <td>183</td>
-                                                        <td><a href="#" style="text-decoration: none" class="text-muted">Networking</a></td>
+                                                        <td class="text-muted">Networking</td>
                                                     </tr>
                                                     <tr>
                                                         <td>999</td>
-                                                        <td><a href="#" style="text-decoration: none" class="text-muted">Programming</a></td>
+                                                        <td class="text-muted">Programming</td>
                                                     </tr>
                                                     <tr>
                                                         <td>000</td>
-                                                        <td><a href="#" style="text-decoration: none" class="text-muted">Mathematics</a></td>
+                                                        <td class="text-muted">Mathematics</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>

@@ -23,7 +23,7 @@
               <td>Head Of Department</td>
               <td>1</td>
               <td>
-                  <a href="/view-role-detail">
+                  <a href="/view-detail-role">
                       <button class="btn btn-primary"><i class="fas fa-info-circle mr-1"></i>Details</button>
                   </a>
                   <a href="#">

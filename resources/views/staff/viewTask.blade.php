@@ -25,7 +25,7 @@
               <td>John Doe</td>
               <td>2023-10-22</td>
               <td>
-                <a href="/view-task-detail">
+                <a href="/view-detail-task">
                   <button class="btn btn-primary"><i class="fas fa-info-circle mr-1"></i>Details</button>
                 </a>
                 <a href="#">

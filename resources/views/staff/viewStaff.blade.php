@@ -30,7 +30,7 @@
                   <td>{{$staff->phone_no}}</td>
                   <td></td>
                   <td>
-                    <a href="/view-staff-profile/{{$staff->id}}">
+                    <a href="/view-profile-staff/{{$staff->id}}">
                       <button class="btn btn-primary"><i class="fas fa-info-circle mr-1"></i>View Profile</button>
                     </a>
                   </td>
