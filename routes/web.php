@@ -1,9 +1,13 @@
 <?php
 
-use App\Http\Controllers\NotificationController;
-use App\Http\Controllers\ProfileController;
+use App\Models\Dit;
+use App\Models\Classes;
+use App\Models\Modules;
+use App\Models\DitStudents;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\NotificationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +27,21 @@ Route::view('/track', 'student.complaint');
 Route::view('/about', 'index');
 
 // staff routes
-Route::view('/admin', 'staff\admin');
+// Route::view('/admin', '');
+Route::get('/admin' , function(){
+    $totalStudents = DitStudents::count();
+    $totalStaffs = Dit::count();
+    $totalClasses = Classes::count();
+    $totalModules = Modules::count();
+
+   return view('staff\admin',[
+        'totalStudents' => $totalStudents,
+        'totalStaffs' => $totalStaffs,
+        'totalModules' => $totalModules,
+        'totalClasses' => $totalClasses
+]);
+});  
+
 Route::post('/admin', [UserController::class, 'adminLogin']);
 
 //side menu
