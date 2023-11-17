@@ -6,6 +6,7 @@ use App\Models\Modules;
 use App\Models\DitStudents;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\IssueController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\NotificationController;
 
@@ -25,6 +26,7 @@ Route::view('/', 'student.home');
 Route::view('/compose', 'student.compose');
 Route::view('/track', 'student.complaint');
 Route::view('/about', 'index');
+Route::post('/submit-complaint', [IssueController::class , 'createComplaint']);
 
 // staff routes
 // Route::view('/admin', '');
@@ -36,9 +38,9 @@ Route::get('/admin' , function(){
 
    return view('staff\admin',[
         'totalStudents' => $totalStudents,
-        'totalStaffs' => $totalStaffs,
         'totalModules' => $totalModules,
-        'totalClasses' => $totalClasses
+        'totalClasses' => $totalClasses,
+        'totalStaffs' => $totalStaffs
 ]);
 });  
 
