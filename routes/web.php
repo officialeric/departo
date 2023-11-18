@@ -47,7 +47,7 @@ Route::get('/admin' , function(){
 Route::post('/admin', [UserController::class, 'adminLogin']);
 
 //side menu
-Route::view('/dashboard ', 'staff\admin');
+// Route::view('/dashboard ', 'staff\admin');/
 Route::view('/add-staff ', 'staff\addStaff');
 Route::get('/view-staff', [UserController::class, 'ditStaffs']);
 
